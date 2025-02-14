@@ -1,0 +1,9 @@
+.menu-nav-ul li a:hover {
+    color: #0D87DE;
+    text-decoration: underline;
+}
+
+.section-conteudo img:hover {
+    transform: scale(1.05);
+    border-radius: 50%;
+}
