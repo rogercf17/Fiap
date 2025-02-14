@@ -1,0 +1,48 @@
+carros = ['Celta', 'Gol', 'Hb20', 'Corsa']
+print(carros)
+print()
+x = carros[0]
+# print(x)
+
+x = len(carros)
+# print(x)
+
+# for i in carros:
+    # print(i)
+
+# append()
+carros.append('Sandero')
+print(carros)
+print()
+
+# pop()
+carros.pop(1)
+print(carros)
+
+# remove()
+carros.remove('Sandero')
+print()
+print(carros)
+
+# insert()
+carros.insert(0, 'Onix')
+print()
+print(carros)
+
+# copy()
+copia_carros = carros.copy()
+print()
+print(carros)
+print(copia_carros)
+
+# reversed()
+carros_reversed = list(reversed(carros))
+print()
+print(carros)
+print(carros_reversed)
+
+# sort()
+print()
+print(carros)
+carros.sort(key=len)
+print(carros)

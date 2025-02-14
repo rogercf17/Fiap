@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+        <title>Caluladora</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box-form">
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="numero1" placeholder="Digite aqui:">
+                <br>
+                <label for="numero2">Número 2:</label>
+                <input type="number" id="numero2" placeholder="Digite aqui:">
+                <br> 
+                <div class="box-operações">
+                    <button id="btnClicar" onclick="somar()"><img src="img/add.png" /></button>
+                    <button id="btnClicar" onclick="subtrair()"><img src="img/menos.png" /></button>
+                    <button id="btnClicar" onclick="multiplicar()"><img src="img/multi.png" /></button>
+                    <button id="btnClicar" onclick="dividir()"><img src="img/divisao.png" class="icon"/></button>
+                </div>
+            </div>
+            <div class="box-resultado">
+                <h2> Resultado: </h2>
+                <h3 id="resultado"></h3>
+            </div>
+        </div>
+        <button id="btnLimpar" onclick="limparTela()">Limpar</button>
+        <script src="js/main.js"></script>  
+    </body>
+</html>
