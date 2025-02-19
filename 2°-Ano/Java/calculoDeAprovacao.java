@@ -19,12 +19,13 @@ public class calculoDeAprovacao {
             System.out.println("Aprovado com média "+ ms);
         }else {
             System.out.println(ms +" Você ficou de exame...");
-            double notaAprovacao = (10-ms);
 
             System.out.print("Digite a nota do exame final: ");
             double exame = scanner.nextDouble();
 
-            if (exame >= notaAprovacao){
+            double notaAprovacao = (ms+exame) / 2;
+
+            if (notaAprovacao >= 5){
                 System.out.print("Aprovado!! Você passou no exame");
             }else {
                 System.out.print("Reprovado!! Você não passou no exame");
